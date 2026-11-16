@@ -16,10 +16,12 @@
   var SPEED = 0.5; // hard-coded animation_speed_factor in the original shader
   var OPACITIES = [0.3, 0.3, 0.3, 0.5, 0.5, 0.5, 0.8, 0.8, 0.8, 1];
 
-  // Centre fade from Figma (1503x980 frame): ellipse ~647x380px at (751, 580).
+  // Centre fade. Figma had an ellipse of ~43% x 38.8% (647x380px of 1503x980) at
+  // (50%, 59.2%); enlarged so the heading/text area stays clear of dots.
+  // Tweak the two radii (x y) to grow/shrink the clear area.
   var FADE =
-    'radial-gradient(ellipse 43% 38.8% at 50% 59.2%,' +
-    'rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.6) 60%,rgba(0,0,0,0) 100%)';
+    'radial-gradient(ellipse 62% 56% at 50% 55%,' +
+    'rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.95) 40%,rgba(0,0,0,0.6) 70%,rgba(0,0,0,0) 100%)';
 
   var VERT = [
     '#version 300 es',

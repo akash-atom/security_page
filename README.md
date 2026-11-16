@@ -3,7 +3,7 @@
 ## Usage via jsDelivr CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@aw-webflow/security_page@1.0.0/script.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@aw-webflow/security_page@1.0.1/script.min.js"></script>
 ```
 
 ## Deployment Workflow
